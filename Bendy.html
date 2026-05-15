@@ -18,12 +18,15 @@
                 gap: 10px;
                 margin-bottom: 15px;
             }
+            
+            /* --- ESTILO DE BOTONES MEJORADO --- */
             .wbfs, .wup {
+                display: inline-block;      /* Mantiene el botón centrado y con cuerpo */
                 min-width: 64px;
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
@@ -33,16 +36,26 @@
                 background-color: rgb(26, 115, 232);
                 color: #fff;
                 cursor: pointer;
+                text-decoration: none;      /* Por si decides usar <a> después */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro al hacer clic */
+                user-select: none;          /* Evita el bloque azul de selección */
             }
+
+            .wbfs:hover, .wup:hover {
+                background-color: rgb(20, 90, 190);
+            }
+
             .buttons {
                 margin-top: 15px;
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <div class="logos">
-            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50"alt="logo">
-            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150"alt="logo">
+            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50" alt="logo">
+            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150" alt="logo">
         </div>
         <h1>Bendy's Games</h1>
         <div class="buttons">
