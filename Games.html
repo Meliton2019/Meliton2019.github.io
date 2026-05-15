@@ -4,82 +4,94 @@
         <title>Games</title>
         <link rel="icon" href="img/Logo Lorenzo/Gorilmoncat.png" type="image/png">
         <style>
-            
+            * {
+                font-family: arial;
+            }
+            body {
+                margin: 0;
+                padding: 20px; /* espacio arriba */
+                text-align: center; /* centra el contenido horizontal */
+            }
+            .logos {
+                display: flex;
+                justify-content: center; /* centra las imágenes */
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+
+            /* --- CAMBIO EXCLUSIVO EN LOS BOTONES --- */
             .wbfs, .web, .part {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
+                display: inline-block;      /* Mantiene los botones en línea y centrados */
                 min-width: 64px;
+                border: none;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
-                padding: 0 24px;
-                margin: 6px 4px;
-                
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
                 font-weight: 500;
-                text-decoration: none;
-                color: #ffffff !important;
-                
-                border: none;
-                outline: none;
+                padding: 0 24px;
                 box-sizing: border-box;
+                color: #fff;
                 cursor: pointer;
-                user-select: none;
-                transition: background-color 0.2s, box-shadow 0.2s;
+                text-decoration: none;      /* Elimina el subrayado de enlace */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro azul al hacer clic */
+                user-select: none;          /* Evita la selección azul del texto */
             }
-            
+
             .wbfs { background-color: rgb(26, 115, 232); }
             .web  { background-color: rgb(34, 139, 34); }
             .part { background-color: rgb(255, 192, 0); }
-            
-            .wbfs:hover { background-color: #1558b0; }
-            .web:hover  { background-color: #1a6b1a; }
-            .part:hover { background-color: #d9a300; }
+            /* --------------------------------------- */
+
+            .buttons {
+                margin-top: 15px;
+                text-align: center; /* Refuerza el centrado de los botones */
+            }
         </style>
     </head>
     <body>
         <div class="logos">
-            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50"alt="logo">
-            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150"alt="logo">
+            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50" alt="logo">
+            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150" alt="logo">
         </div>
         <h1>Games</h1>
         <div class="buttons">
-            <a class="web" type="a" href='Bendy.html'>Bendy's Games</a>
-            <a class="web" type="a" href='FTF.html'>Fears to Fathom</a>
-            <a class="web" type="a" href='FnafGames.html'>Fnaf Games</a>
-            <a class="web" type="a" href='Hollow.html'>Hollow Knight</a>
-            <a class="web" type="a" href='GTAGames.html'>Grand Theft Auto Games</a>
-            <a class="web" type="a" href='PP.html'>Poppy Playtime</a>
-            <a class="web" type="a" href='Portal.html'>Portal's Games</a>
-            <a class="part" type="a" href='BeamNG.html'>BeamNG.drive</a>
-            <a class="part" type="a" href='ETB.html'>Escape the Backrooms</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/ldf79zbdzcy586w/Alternate_Watch_Setup.exe/file'>Alternate Watch</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/q8dwfs3i5aiow61/Among_Us_Setup.exe/file'>Among Us</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/dylhcvr946qebvl/Bad_Parenting_1_Mr_Red_Face_Setup.exe/file'>Bad Parenting 1 Mr Red Face</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/bg0k358ohnwdrkj/Balatro_Setup.exe/file'>Balatro</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/jiy7wrdayq4499f/Cookie_Clicker_Setup.exe/file'>Cookie Clicker</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/kncgbqhuqp42n1a/Cult_of_the_Lamb_Setup.zip/file'>Cult of the Lamb</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/p1iysoiencg29zy/Cuphead_Setup.zip/file'>Cuphead</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/xj4xit83fbh5wjp/Garry%2527s_Mod_Setup.zip/file'>Garry's Mod</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/j0cdv4896ocxfsd/Geometry_Dash.exe/file'>Geometry Dash</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/5sul6p8h1bid2ug/Granny_Setup.exe/file'>Granny</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/wh7mu5lx97fcr64/Half-Life_Setup.exe/file'>Half-Life</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/z3ixigh5ift5bmz/Indie_Cross_Setup.exe/file'>Indie Cross</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/s7xhq6bs7ahg74l/MegaBonk_Setup.exe/file'>MegaBonk</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/phof51hf85n6yan/Midnight_Taco_Setup.exe/file'>Midnight Taco</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/msw7d5s6b0b051r/MyVoiceZoo_Setup.exe/file'>MyVoiceZoo</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/6fjm2xfhn3o8m4t/Pineapple_on_Pizza_Setup.exe/file'>Pineapple on Pizza</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/px9qai9yurums87/Shedule_I.zip/file'>Shedule I</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/sm8aq39995mypze/Stardew_Valley_Setup.exe/file'>Stardew Valley</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/gpxv980o77gxpf8/Station_Setup.exe/file'>Station</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/73bx9vhfmqyckyk/Stray_Setup.zip­/file'>Stray</a>­­
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/rdwi91ouq0ycgxl/The_Exit_8_Setup.exe/file'>The Exit 8</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/yaccyk0783b9yi7/The_Henry_Stickmin_Collection_Setup.exe/file'>The Henry­ ­­­­Stickmin Collection</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/jdjbtuidp5q537g/Turbo_Dismount.exe/file'>Turbo Dismount</a>
-            <a class="wbfs" type="a" href='https://www.mediafire.com/file/m0n0uzc8fge1ypn/Undertale_Setup.exe/file'>Undertale</a>
+            <a class="web" href='Bendy.html'>Bendy's Games</a>
+            <a class="web" href='FTF.html'>Fears to Fathom</a>
+            <a class="web" href='FnafGames.html'>Fnaf Games</a>
+            <a class="web" href='Hollow.html'>Hollow Knight</a>
+            <a class="web" href='GTAGames.html'>Grand Theft Auto Games</a>
+            <a class="web" href='PP.html'>Poppy Playtime</a>
+            <a class="web" href='Portal.html'>Portal's Games</a>
+            <a class="part" href='BeamNG.html'>BeamNG.drive</a>
+            <a class="part" href='ETB.html'>Escape the Backrooms</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/ldf79zbdzcy586w/Alternate_Watch_Setup.exe/file'>Alternate Watch</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/q8dwfs3i5aiow61/Among_Us_Setup.exe/file'>Among Us</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/dylhcvr946qebvl/Bad_Parenting_1_Mr_Red_Face_Setup.exe/file'>Bad Parenting 1 Mr Red Face</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/bg0k358ohnwdrkj/Balatro_Setup.exe/file'>Balatro</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/jiy7wrdayq4499f/Cookie_Clicker_Setup.exe/file'>Cookie Clicker</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/kncgbqhuqp42n1a/Cult_of_the_Lamb_Setup.zip/file'>Cult of the Lamb</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/p1iysoiencg29zy/Cuphead_Setup.zip/file'>Cuphead</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/xj4xit83fbh5wjp/Garry%2527s_Mod_Setup.zip/file'>Garry's Mod</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/j0cdv4896ocxfsd/Geometry_Dash.exe/file'>Geometry Dash</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/5sul6p8h1bid2ug/Granny_Setup.exe/file'>Granny</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/wh7mu5lx97fcr64/Half-Life_Setup.exe/file'>Half-Life</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/z3ixigh5ift5bmz/Indie_Cross_Setup.exe/file'>Indie Cross</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/s7xhq6bs7ahg74l/MegaBonk_Setup.exe/file'>MegaBonk</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/phof51hf85n6yan/Midnight_Taco_Setup.exe/file'>Midnight Taco</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/msw7d5s6b0b051r/MyVoiceZoo_Setup.exe/file'>MyVoiceZoo</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/6fjm2xfhn3o8m4t/Pineapple_on_Pizza_Setup.exe/file'>Pineapple on Pizza</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/px9qai9yurums87/Shedule_I.zip/file'>Shedule I</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/sm8aq39995mypze/Stardew_Valley_Setup.exe/file'>Stardew Valley</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/gpxv980o77gxpf8/Station_Setup.exe/file'>Station</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/73bx9vhfmqyckyk/Stray_Setup.zip/file'>Stray</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/rdwi91ouq0ycgxl/The_Exit_8_Setup.exe/file'>The Exit 8</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/yaccyk0783b9yi7/The_Henry_Stickmin_Collection_Setup.exe/file'>The Henry Stickmin Collection</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/jdjbtuidp5q537g/Turbo_Dismount.exe/file'>Turbo Dismount</a>
+            <a class="wbfs" href='https://www.mediafire.com/file/m0n0uzc8fge1ypn/Undertale_Setup.exe/file'>Undertale</a>
         </div>
     </body>
 </html>
-
-
