@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +18,15 @@
                 gap: 10px;
                 margin-bottom: 15px;
             }
+            
+            /* --- ESTILO DE BOTONES MEJORADO --- */
             .archive {
+                display: inline-block;      /* Mantiene los botones en línea y centrados */
                 min-width: 64px;
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
@@ -34,36 +36,52 @@
                 background-color: rgb(26, 115, 232);
                 color: #fff;
                 cursor: pointer;
+                text-decoration: none;      /* Elimina el subrayado azul de enlace */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro al hacer clic */
+                user-select: none;          /* Evita la selección azul del texto */
             }
+
+            .archive:hover {
+                background-color: rgb(20, 90, 190); /* Efecto visual al pasar el mouse */
+            }
+
             .archives {
                 margin-top: 15px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                color: #555;
+                margin: 20px auto;
+                max-width: 800px;
             }
         </style>
     </head>
     <body>
         <div class="logos">
-            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50"alt="logo">
-            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150"alt="logo">
+            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50" alt="logo">
+            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150" alt="logo">
         </div>
         <h1>Windows Programs</h1>
         <div class="archives">
-            <button class="archive" type="button" onclick="location.href='https://www.mediafire.com/file/dypv0sva3q6qrva/FL_Studio_25_Producer_Edition.exe/file'">FL Studio 25 Producer Edition</button>
-            <button class="archive" type="button" onclick="location.href='https://www.mediafire.com/file/pts33knhjo3ywp1/Internet_Download_Manager.exe/file'">Internet Download Manager</button>
-            <button class="archive" type="button" onclick="location.href='https://www.mediafire.com/file/2a1x15c9lcra4o2/Photoshop_CS6_Setup.exe/file'">Photoshop CS6</button>
-            <button class="archive" type="button" onclick="location.href='Programs/Windows-Programs/Setup/Iconsext Setup.exe'">Iconsext</button>
-            <button class="archive" type="button" onclick="location.href='Programs/Windows-Programs/Setup/Scrcpy Setup.exe'">Scrcpy</button>
-            <button class="archive" type="button" onclick="location.href='Programs/Windows-Programs/Setup/Coagula Light Setup.exe'">Coagula Light</button>
-            <button class="archive" type="button" onclick="location.href='https://www.mediafire.com/file/gx6d4fbb6mwkqfr/DnSpy_Setup.exe/file'">DnSpy</button>
-            <button class="archive" type="button" onclick="location.href='Programs/Windows-Programs/Setup/Asu Riivolution Iso Builder Setup.exe'">Asu's Riivolution Iso Builder</button>
-            <button class="archive" type="button" onclick="location.href='Programs/Windows-Programs/Setup/HackBGRT Setup.exe'">HackBGRT</button>
-            <button class="archive" type="button" onclick="location.href='https://opera.dsnetwb.com/files/aTube_Catcher_Setup_10.26.0_x64.exe'">aTube Catcher</button>
-            <button class="archive" type="button" onclick="location.href='https://github.com/FailedShack/USBHelperInstaller/releases/download/1.2/USBHelperInstaller.exe'">WiiU USB Helper</button>
-            <button class="archive" type="button" onclick="location.href='Programs/Windows-Programs/Setup/Geek Uninstaller.exe'">Geek Uninstaller</button>
-            <button class="archive" type="button" onclick="location.href='https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe'">Steam</button>
-            <button class="archive" type="button" onclick="location.href='https://steamtools.net/res/st-setup-1.8.17r2.exe'">Steam Tools</button>
+            <a class="archive" href='https://www.mediafire.com/file/dypv0sva3q6qrva/FL_Studio_25_Producer_Edition.exe/file'>FL Studio 25 Producer Edition</a>
+            <a class="archive" href='https://www.mediafire.com/file/pts33knhjo3ywp1/Internet_Download_Manager.exe/file'>Internet Download Manager</a>
+            <a class="archive" href='https://www.mediafire.com/file/2a1x15c9lcra4o2/Photoshop_CS6_Setup.exe/file'>Photoshop CS6</a>
+            <a class="archive" href='Programs/Windows-Programs/Setup/Iconsext Setup.exe'>Iconsext</a>
+            <a class="archive" href='Programs/Windows-Programs/Setup/Scrcpy Setup.exe'>Scrcpy</a>
+            <a class="archive" href='Programs/Windows-Programs/Setup/Coagula Light Setup.exe'>Coagula Light</a>
+            <a class="archive" href='https://www.mediafire.com/file/gx6d4fbb6mwkqfr/DnSpy_Setup.exe/file'>DnSpy</a>
+            <a class="archive" href='Programs/Windows-Programs/Setup/Asu Riivolution Iso Builder Setup.exe'>Asu's Riivolution Iso Builder</a>
+            <a class="archive" href='Programs/Windows-Programs/Setup/HackBGRT Setup.exe'>HackBGRT</a>
+            <a class="archive" href='https://opera.dsnetwb.com/files/aTube_Catcher_Setup_10.26.0_x64.exe'>aTube Catcher</a>
+            <a class="archive" href='https://github.com/FailedShack/USBHelperInstaller/releases/download/1.2/USBHelperInstaller.exe'>WiiU USB Helper</a>
+            <a class="archive" href='Programs/Windows-Programs/Setup/Geek Uninstaller.exe'>Geek Uninstaller</a>
+            <a class="archive" href='https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe'>Steam</a>
+            <a class="archive" href='https://steamtools.net/res/st-setup-1.8.17r2.exe'>Steam Tools</a>
         </div>
         <p>Chrome may detect some programs as suspicious. Because they aren't usually downloaded, but that's because I created the installers myself using Inno Setup Compiler</p>
         <p>Chrome puede detectar algunos programas como sospechosos. Esto se debe a que no se suelen descargar, pero eso se debe a que creé los instaladores yo mismo con Inno Setup Compiler</p>
     </body>
 </html>
-
