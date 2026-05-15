@@ -18,12 +18,15 @@
                 gap: 10px;
                 margin-bottom: 15px;
             }
+            
+            /* --- ESTILO DE BOTONES MEJORADO --- */
             .wbfs, .wup {
+                display: inline-block;      /* Permite centrado y dimensiones de botón */
                 min-width: 64px;
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
@@ -33,24 +36,35 @@
                 background-color: rgb(26, 115, 232);
                 color: #fff;
                 cursor: pointer;
+                text-decoration: none;      /* Elimina el subrayado azul */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro al hacer clic */
+                user-select: none;          /* Evita la selección azul del texto */
+                transition: background-color 0.2s;
             }
+
+            .wbfs:hover, .wup:hover {
+                background-color: rgb(20, 90, 190); /* Efecto al pasar el mouse */
+            }
+
             .buttons {
                 margin-top: 15px;
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <div class="logos">
-            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50"alt="logo">
-            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150"alt="logo">
+            <img src="img/Logo Lorenzo/Gorilmoncat + logo gameoverdeluxe2.png" width="50" alt="logo">
+            <img src="img/Logo Lorenzo/Gameoverdeluxe2 logo blanco y rojo.png" width="150" alt="logo">
         </div>
         <h1>Fears to Fathom Games</h1>
         <div class="buttons">
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/p888cbinq34r5iw/Fears_to_Fathom_-_Home_Alone.exe/file'">Fears to Fathom - Home Alone</button>
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/shw0lk1p9atnngw/Fears_to_Fathom_-_Norwood_Hitchhike_Setup.zip/file'">Fears to Fathom - Horwood Hitcchike</button>
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/4aatjtyhgsqkdkr/Fears_to_Fathom_-_Carson_House_Setup.zip/file'">Fears to Fathom - Carson House</button>
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/ruxb1bguhsl8mfo/Fears_to_Fathom_-_Woodbury_Getaway_Setup.zip/file'">Fears to Fathom - Woodbury Getaway</button>
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/fgdtycpuh0lqih9/Fears_to_Fathoms_-_Ironbark_Lookout_Setup.zip/file'">Fears to Fathom - Ironbark Lookout</button>
+          <a class="wbfs" href='https://www.mediafire.com/file/p888cbinq34r5iw/Fears_to_Fathom_-_Home_Alone.exe/file'>Fears to Fathom - Home Alone</a>
+          <a class="wbfs" href='https://www.mediafire.com/file/shw0lk1p9atnngw/Fears_to_Fathom_-_Norwood_Hitchhike_Setup.zip/file'>Fears to Fathom - Horwood Hitcchike</a>
+          <a class="wbfs" href='https://www.mediafire.com/file/4aatjtyhgsqkdkr/Fears_to_Fathom_-_Carson_House_Setup.zip/file'>Fears to Fathom - Carson House</a>
+          <a class="wbfs" href='https://www.mediafire.com/file/ruxb1bguhsl8mfo/Fears_to_Fathom_-_Woodbury_Getaway_Setup.zip/file'>Fears to Fathom - Woodbury Getaway</a>
+          <a class="wbfs" href='https://www.mediafire.com/file/fgdtycpuh0lqih9/Fears_to_Fathoms_-_Ironbark_Lookout_Setup.zip/file'>Fears to Fathom - Ironbark Lookout</a>
         </div>
     </body>
 </html>
