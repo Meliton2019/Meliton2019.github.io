@@ -4,71 +4,38 @@
         <title>Games</title>
         <link rel="icon" href="img/Logo Lorenzo/Gorilmoncat.png" type="image/png">
         <style>
-            * {
-                font-family: arial;
-            }
-            body {
-                margin: 0;
-                padding: 20px; /* espacio arriba */
-                text-align: center; /* centra el contenido horizontal */
-            }
-            .logos {
-                display: flex;
-                justify-content: center; /* centra las imágenes */
-                gap: 10px;
-                margin-bottom: 15px;
-            }
-            .wbfs {
+            
+            .wbfs, .web, .part {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 min-width: 64px;
-                border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
                 height: 36px;
                 border-radius: 4px;
+                padding: 0 24px;
+                margin: 6px 4px;
+                
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
                 font-weight: 500;
-                padding: 0 24px;
-                box-sizing: border-box;
-                background-color: rgb(26, 115, 232);
-                color: #fff;
-                cursor: pointer;
-            }
-            .web {
-                min-width: 64px;
+                text-decoration: none;
+                color: #ffffff !important;
+                
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
-                height: 36px;
-                border-radius: 4px;
-                font-family: "Google Sans", Roboto, Arial, sans-serif;
-                font-size: 15px;
-                font-weight: 500;
-                padding: 0 24px;
+                outline: none;
                 box-sizing: border-box;
-                background-color: rgb(34, 139, 34);
-                color: #fff;
                 cursor: pointer;
+                user-select: none;
+                transition: background-color 0.2s, box-shadow 0.2s;
             }
-            .part {
-                min-width: 64px;
-                border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
-                height: 36px;
-                border-radius: 4px;
-                font-family: "Google Sans", Roboto, Arial, sans-serif;
-                font-size: 15px;
-                font-weight: 500;
-                padding: 0 24px;
-                box-sizing: border-box;
-                background-color: rgb(255, 192, 0);
-                color: #fff;
-                cursor: pointer;
-            }
-            .buttons {
-                margin-top: 15px;
-            }
+            
+            .wbfs { background-color: rgb(26, 115, 232); }
+            .web  { background-color: rgb(34, 139, 34); }
+            .part { background-color: rgb(255, 192, 0); }
+            
+            .wbfs:hover { background-color: #1558b0; }
+            .web:hover  { background-color: #1a6b1a; }
+            .part:hover { background-color: #d9a300; }
         </style>
     </head>
     <body>
