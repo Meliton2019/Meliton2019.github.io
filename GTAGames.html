@@ -19,11 +19,12 @@
                 margin-bottom: 15px;
             }
             .wbfs, .wup {
+               display: inline-block;      /* Permite centrado y dimensiones de botón */
                 min-width: 64px;
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
@@ -33,6 +34,11 @@
                 background-color: rgb(26, 115, 232);
                 color: #fff;
                 cursor: pointer;
+                text-decoration: none;      /* Elimina el subrayado azul */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro al hacer clic */
+                user-select: none;          /* Evita la selección azul del texto */
+                transition: background-color 0.2s;
             }
             .buttons {
                 margin-top: 15px;
@@ -46,7 +52,7 @@
         </div>
         <h1>Grand Theft Auto Games</h1>
         <div class="buttons">
-            <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/0k7y46pbor2hzse/Grand_Theft_Auto_San_Andreas_Setup.zip/file'">Grand Theft Auto San Andreas</button>
+            <a class="wbfs" type="a" onclick="location.href='https://www.mediafire.com/file/0k7y46pbor2hzse/Grand_Theft_Auto_San_Andreas_Setup.zip/file'>Grand Theft Auto San Andreas</a>
         </div>
     </body>
 </html>
