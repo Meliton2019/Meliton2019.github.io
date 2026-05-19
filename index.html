@@ -11,20 +11,25 @@
                     text-align: center;
                 }
                 .a {
-                    min-width: 64px;
-                    border: none;
-                    margin-top: 6px;
-                    margin-bottom: 6px;
-                    height: 36px;
-                    border-radius: 4px;
-                    font-family: "Google Sans", Roboto, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: 500;
-                    padding: 0 24px;
-                    box-sizing: border-box;
-                    background-color: rgb(26, 115, 232);
-                    color: #fff;
-                    cursor: pointer;
+                     display: inline-block;      /* Permite centrado y dimensiones de botón */
+                        min-width: 64px;
+                        border: none;
+                        margin: 6px 2px;
+                        height: 36px;
+                        line-height: 36px;          /* Centra el texto verticalmente */
+                        border-radius: 4px;
+                        font-family: "Google Sans", Roboto, Arial, sans-serif;
+                        font-size: 15px;
+                        font-weight: 500;
+                        padding: 0 24px;
+                        box-sizing: border-box;
+                        background-color: rgb(26, 115, 232);
+                        color: #fff;
+                        cursor: pointer;
+                        text-decoration: none;      /* Elimina el subrayado azul */
+                        vertical-align: middle;
+                        outline: none;              /* Elimina el recuadro al hacer clic */
+                        user-select: none; 
                 }
                 .logos {
                 display: flex;
