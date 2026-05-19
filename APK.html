@@ -18,11 +18,12 @@
                 margin-bottom: 15px;
             }
             .wbfs, .wup {
+                display: inline-block;      /* Permite centrado y dimensiones de botón */
                 min-width: 64px;
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
@@ -32,6 +33,11 @@
                 background-color: rgb(26, 115, 232);
                 color: #fff;
                 cursor: pointer;
+                text-decoration: none;      /* Elimina el subrayado azul */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro al hacer clic */
+                user-select: none;          /* Evita la selección azul del texto */
+                transition: background-color 0.2s;
             }
             .buttons {
                 margin-top: 15px;
@@ -45,10 +51,10 @@
         </div>
         <h1>APK</h1>
         <div class="buttons">
-            <button class="wbfs" type="button" onclick="location.href='https://mega.nz/file/2VFEGZYa#6DzeGq0Jrmvcn4snT3S10SXofNpsgJ4DxTonTZfITps'">Geometry Dash Unlocked</button>
-            <button class="wup" type="button" onclick="location.href='https://mega.nz/file/CQN3mTyL#iblzS99WuVbrYXy8Rw6Jy5SWjWKEYcOUAmjPOFZWMzQ'">Pou Mod Money</button>
-            <button class="wup" type="button" onclick="location.href='https://mega.nz/file/aItWFQyY#-QFqwaqJGBMnTv7oDoOclld00UPK-RRZ37-Gy4OgoNw'">Avatarify Mod</button>
-            <button class="wup" type="button" onclick="location.href='Programs/Windows-Programs/apk/HappyMod-Download-3-2-5.apk'">Happy Mod</button>
+            <a class="wbfs" type="a" href='https://mega.nz/file/2VFEGZYa#6DzeGq0Jrmvcn4snT3S10SXofNpsgJ4DxTonTZfITps'>Geometry Dash Unlocked</a>
+            <a class="wup" type="a" href='https://mega.nz/file/CQN3mTyL#iblzS99WuVbrYXy8Rw6Jy5SWjWKEYcOUAmjPOFZWMzQ'>Pou Mod Money</a>
+            <a class="wup" type="a" href='https://mega.nz/file/aItWFQyY#-QFqwaqJGBMnTv7oDoOclld00UPK-RRZ37-Gy4OgoNw'>Avatarify Mod</a>
+            <a class="wup" type="a" href='Programs/Windows-Programs/apk/HappyMod-Download-3-2-5.apk'>Happy Mod</a>
         </div>
     </body>
 </html>
