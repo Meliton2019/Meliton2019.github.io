@@ -19,11 +19,12 @@
                 margin-bottom: 15px;
             }
             .wbfs, .wup {
+                display: inline-block;      /* Permite centrado y dimensiones de botón */
                 min-width: 64px;
                 border: none;
-                margin-top: 6px;
-                margin-bottom: 6px;
+                margin: 6px 2px;
                 height: 36px;
+                line-height: 36px;          /* Centra el texto verticalmente */
                 border-radius: 4px;
                 font-family: "Google Sans", Roboto, Arial, sans-serif;
                 font-size: 15px;
@@ -33,6 +34,11 @@
                 background-color: rgb(26, 115, 232);
                 color: #fff;
                 cursor: pointer;
+                text-decoration: none;      /* Elimina el subrayado azul */
+                vertical-align: middle;
+                outline: none;              /* Elimina el recuadro al hacer clic */
+                user-select: none;          /* Evita la selección azul del texto */
+                transition: background-color 0.2s;
             }
             .buttons {
                 margin-top: 15px;
@@ -46,9 +52,9 @@
         </div>
         <h1>Hello Neighbor Games</h1>
         <div class="buttons">
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/apmswlsnxbonvun/Hello_Neighbor_Setup.zip/file'">Hello Neighbor</button>
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/pkkjv46f23xe2qk/Hello_Neighbor_2_Setup.zip/file'">Hello Neighbor 2</button>
-          <button class="wbfs" type="button" onclick="location.href='https://www.mediafire.com/file/o5id3v9ls2msi2c/Hello_Neighbor_Hide_and_Seek_Setup.exe/file'">Hello Neighbor Hide and Seek</button>
+          <a class="wbfs" type="a" href='https://www.mediafire.com/file/apmswlsnxbonvun/Hello_Neighbor_Setup.zip/file'>Hello Neighbor</a>
+          <a class="wbfs" type="a" href='https://www.mediafire.com/file/pkkjv46f23xe2qk/Hello_Neighbor_2_Setup.zip/file'>Hello Neighbor 2</a>
+          <a class="wbfs" type="a" href='https://www.mediafire.com/file/o5id3v9ls2msi2c/Hello_Neighbor_Hide_and_Seek_Setup.exe/file'>Hello Neighbor Hide and Seek</a>
         </div>
     </body>
 </html>
